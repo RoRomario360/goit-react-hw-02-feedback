@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import css from './FeedbackOptions.module.css';
 export default function FeedbackOptions({ options, onBtnClick }) {
   return (
@@ -16,3 +17,7 @@ export default function FeedbackOptions({ options, onBtnClick }) {
     </ul>
   );
 }
+FeedbackOptions.propType = {
+  option: PropTypes.string,
+  onBtnClick: PropTypes.func,
+};
