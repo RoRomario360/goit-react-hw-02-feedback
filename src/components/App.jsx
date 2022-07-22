@@ -5,9 +5,6 @@ import Statistics from './Statistics/Statistics';
 import Notification from './Notification/Notification';
 
 export class App extends Component {
-  static defaultProps = {
-    initialValue: 0,
-  };
   state = {
     good: 0,
     neutral: 0,
